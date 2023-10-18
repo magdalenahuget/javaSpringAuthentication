@@ -7,8 +7,14 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
+import lombok.*;
 
 
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "users",
         uniqueConstraints = {
@@ -62,9 +68,6 @@ inverseJoinColumns - Definiuje kolumnę klucza obcego (role_id), która łączy 
 Podsumowując, ten fragment kodu oznacza, że istnieje relacja wiele do wielu między encją User a encją Role,
  przechowywana w tabeli pośredniczącej o nazwie user_roles. Ta relacja umożliwia przypisanie wielu ról
  do wielu użytkowników. */
-
-    public User() {
-    }
 
     public User(String username, String email, String password) {
         this.username = username;
