@@ -1,13 +1,13 @@
-package com.company.bezkoderauthentication;
+package com.company.authentication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BezkoderAuthenticationApplication {
+public class AuthenticationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BezkoderAuthenticationApplication.class, args);
+		SpringApplication.run(AuthenticationApplication.class, args);
 	}
 
 }
